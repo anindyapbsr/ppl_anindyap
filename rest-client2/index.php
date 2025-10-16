@@ -22,8 +22,15 @@ $hasil=json_decode($data,true);
     <title>Rest Client dengan cURL</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
+    /* Typography using safe system fonts */
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+        background-color: rgb(225, 243, 254);
+    }
+
     .container {
         margin-top: 75px;
+
     }
 
     .error-box {
@@ -33,13 +40,26 @@ $hasil=json_decode($data,true);
         padding: 15px;
         border-radius: 5px;
     }
+
+    /* Card spacing and contrast */
+    .card {
+        box-shadow: 0 1px 2px rgba(0, 0, 0, .06);
+        background-color: rgba(184, 229, 254, 1);
+        border: 5px solid rgba(22, 6, 130, 0.06);
+    }
+
+    .card-title,
+    .card-text strong {
+        font-weight: 700px;
+    }
     </style>
 </head>
 
 <body>
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-info">
-        <a class="navbar-brand" href="#">RestClient</a>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark"
+        style="background: linear-gradient(90deg, #0d6efd 0%, #6f42c1 100%);">
+        <a class="navbar-brand fw-semibold" href="#" style="font-size: 1.8rem; margin-left: 20px;">NewsAPI</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -47,13 +67,13 @@ $hasil=json_decode($data,true);
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link text-white-50" href="#" style="font-weight: 100px;">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">News</a>
+                    <a class="nav-link text-white-50" href="#">News</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link text-white-50" href="#">About</a>
                 </li>
             </ul>
         </div>
