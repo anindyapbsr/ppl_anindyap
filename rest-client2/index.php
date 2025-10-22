@@ -67,7 +67,7 @@ $hasil=json_decode($data,true);
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link text-white-50" href="#" style="font-weight: 100px;">Home</a>
+                    <a class="nav-link text-white-50" href="#" style="font-weight: 100px;   ">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white-50" href="#">News</a>
