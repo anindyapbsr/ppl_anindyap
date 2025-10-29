@@ -1,0 +1,176 @@
+{
+  "id": "37ed8e45-e7ab-40dc-b5a9-af29c39a7cce",
+  "version": "2.0",
+  "name": "UAT Rest Client",
+  "url": "http://localhost/ppl-anindyap/rest-client2/",
+  "tests": [{
+    "id": "7b010ff7-0acb-4b5f-8e4e-6894d9c3afc0",
+    "name": "Open News Article",
+    "commands": [{
+      "id": "dec4390e-977a-4f6a-ad98-d05cd7aad541",
+      "comment": "",
+      "command": "open",
+      "target": "/ppl-anindyap/rest-client2/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ef7c6376-7938-457d-9541-2a095030f46b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x672",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57d5e54b-a9be-46b2-95ac-b17c02f80d8e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-4:nth-child(2) a",
+      "targets": [
+        ["css=.col-md-4:nth-child(2) a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Selengkapnya..')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://thehackernews.com/2025/10/chrome-zero-day-exploited-to-deliver.html')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/p[2]/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win1931",
+      "windowTimeout": 2000
+    }, {
+      "id": "6dc1168a-b64c-4655-8989-9a16fd7e0356",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win1931}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1e159ea3-c243-4c0b-a252-b5a1db86400a",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,106)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "12a9812d-f1ab-4654-ac43-5ab859e92c02",
+    "name": "Open about pages",
+    "commands": [{
+      "id": "1dfa6bcb-9689-4e9c-96a4-174c235a7ef7",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/ppl-anindyap/rest-client2/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e79c666-a222-4d5d-b609-bf9eec553dbd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x652",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e0327f4d-7cda-4553-9d94-257d448cc92f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=About",
+      "targets": [
+        ["linkText=About", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'About')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNav']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'about.php')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'About')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f11d4a52-a98f-4ebf-92ef-d645560e9b3a",
+    "name": "Open home page",
+    "commands": [{
+      "id": "a18d624d-e9f0-4c11-acd8-8f054f489218",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/ppl-anindyap/rest-client2/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e25c5ef-88f2-4643-bc32-70e597529286",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x652",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3f42b5bc-6203-495c-8b7a-3df672356558",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=.nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNav']/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'home.php')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "27b4c13e-edc4-444c-be1c-42d3226c4a96",
+    "name": "darkmode",
+    "commands": [{
+      "id": "dcf6e3c0-d874-4c4b-97f2-bbda9cf77af2",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/ppl-anindyap/rest-client2/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a16469eb-f25d-47ce-bed9-4779697202e3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x652",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f355b52-b281-4195-8f4d-0a74660ebac3",
+      "comment": "",
+      "command": "click",
+      "target": "id=darkModeBtn",
+      "targets": [
+        ["id=darkModeBtn", "id"],
+        ["css=#darkModeBtn", "css:finder"],
+        ["xpath=//button[@id='darkModeBtn']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarNav']/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Light Mode')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee3bcdc7-8fa5-42f9-9481-b0f43d425ea9",
+      "comment": "",
+      "command": "click",
+      "target": "id=darkModeBtn",
+      "targets": [
+        ["id=darkModeBtn", "id"],
+        ["css=#darkModeBtn", "css:finder"],
+        ["xpath=//button[@id='darkModeBtn']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarNav']/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Dark Mode')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "cf66de88-f520-4090-8db9-d099c9cf355a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7b010ff7-0acb-4b5f-8e4e-6894d9c3afc0"]
+  }],
+  "urls": ["http://localhost/", "http://localhost/ppl-anindyap/rest-client2/"],
+  "plugins": []
+}
